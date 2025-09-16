@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ceramo;
+    
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: arial;
+}
+
+.section-content{
+    margin: 0 auto;/* to center the content */
+    padding: 0 30px;
+    max-width: 1400px;
+}
+
+.section-title{
+    font-family: arial;
+    font-style: bold;
+    padding: 30px 50px;
+    font-size: 45px;
+}
+@font-face {
+    font-family: movalo;
+    src: url(font/movalo.ttf);
+}
+@font-face {
+    font-family: ceramo;
+    src: url(font/ceramo.otf);
+}
+@font-face{
+    font-family: grace;
+    src: url(font/grace.ttf);
+}
