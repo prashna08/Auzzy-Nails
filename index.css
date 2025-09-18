@@ -2,9 +2,9 @@ header{
     width: 100%;
     z-index: 5;
     position: fixed; /* to make the header fixed */
+    background: rgba(0 0 0 .1);
     backdrop-filter: blur(30px);
 }
-
 header .nav-bar{
     display: flex;
     align-items: center;
@@ -111,12 +111,22 @@ header .nav-bar{
     box-shadow: 0 2px 20px #f4c994;
 }
 /*about*/
+.about-section{
+    background-color: #f2f3f4;
+}
 .about-section .section-content{
-    padding: 100px 80px;
+    padding: 50px 80px;
+}
+.about-section .section-content .section-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-section .section-content .section-title span{
+    font-family: movalo;
 }
 .about-section .container{
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
     gap: 50px;
 }
 .about-section .container .service{
@@ -128,40 +138,105 @@ header .nav-bar{
     height: 100%;
 }
 .about-section .container .service .img-border{
-    width: 200px;
-    height: 150px;
+    margin-bottom: 20px;
 }
 .about-section .container .service .img-border img{
-    width: 200px;
+    width: 100%;
     height: 150px;
     object-fit: contain;
 }
-.about-section .container .service .detail{
-
-}
 .about-section .container .service .title{
     font-size: 30px;
+    margin-bottom: 5px;
 }
 .about-section .container .service .subtitle{
     font-size: 14px;
-
+}
+.about-section .container .service .link{
+    margin-top: 10px;
+}
+.about-section .container .service .link a{
+    font-size: 19px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    transition: 0.3s ease all;
+}
+.about-section .container .service .link a:hover{
+    font-size: 21px;
+}
+/*Detail*/
+.detail-section{
+    background-color: #f2f3f4;
+}
+.detail-section .section-content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 70px 50px;
+}
+.detail-section .section-content .container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.detail-section .section-content .container-2 img{
+    width: 700px;
+    height: 300px;
+}
+.detail-section .section-content .container-2 .img-1{
+    border-top-left-radius: 60%;
+}
+.detail-section .section-content .container-2 .img-2{
+    border-bottom-left-radius: 60%;
+}
+.detail-section .section-content .container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detail-section .section-content .container-1 .title{
+    font-size: 20px;
+    color: #b5b5b7;
+    text-transform: uppercase;
+}
+.detail-section .section-content .container-1 .subtitle{
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.detail-section .section-content .container-1 .paragraph{
+    font-size: 15px;
+}
+.detail-section .section-content .container-1 .btn{
+    margin: 40px 0px;
+}
+.detail-section .section-content .container-1 .btn a{
+    padding: 15px 30px;
+    background-color: #f37e00 ;
+    color: #f2f3f4;
+    font-size: 18px;
+    border-radius: 2px;   
+    transition: 0.3s ease all;
+}
+.detail-section .section-content .container-1 .btn a:hover{
+    box-shadow: 0 2px 20px #f4c994;
 }
 
 @media  screen and (max-width: 900px) {
      body.show-mobile-menu header::before{
-        content: '';
+        content: "";
         position: fixed;
         left:0;
         top: 0;
         height: 100%;
         width: 100%;
-        backdrop-filter: blur(5px);
-        background: rgba(47, 47, 47, 0.3);
+        backdrop-filter: blur(50px);
     }
 
     .nav-bar :where(#menu-open-button, #menu-close-button),
     .about-section .about-details{
-        font-size: 20px;
+        font-size: 24px;
         display: block; 
         background: none; /* Removes the background */
         border: none; /* Removes any border if present */
@@ -178,7 +253,6 @@ header .nav-bar{
         right: 30px;
         top: 30px;
     }
-
     .nav-bar .nav-list {
         display: block;
         position: fixed;
@@ -190,9 +264,10 @@ header .nav-bar{
         flex-direction: column;
         align-items: center;
         padding: 28px;
+        background:linear-gradient( to bottom,rgb(156, 191, 198), rgb(120, 158, 175) ) ;
+        opacity: 0.95;
         gap:15px;
-        background: #40663e;
-        transition: 0.5s ease;
+        transition: 0.7s ease;
     }
 
     body.show-mobile-menu .nav-bar .nav-list{
@@ -208,7 +283,7 @@ header .nav-bar{
         color: #e7e4e4;
     }
     .nav-bar .nav-list .nav-link:hover{
-        color: rgb(243, 209, 75);
+        color: #0b0b45;
     }
     .nav-bar .nav-list .nav-link::before{
         content: '';
@@ -218,8 +293,65 @@ header .nav-bar{
         width: 0;
         height: 2px;
         border-radius: 3px;
-        background-color:rgb(199, 173, 72);
-        transition: 0.3s ease;
+        transition: 0.5s ease;
+    }
+    .hero-section .section-content .container-2 .title{
+        font-size: 55px;
+    }
+    .hero-section .section-content .container-2 .paragraph{
+        font-size: 14px;
+    }
+    .hero-section .section-content .container-2 .btn{
+        margin: 20px 0px;
+    }
+    .hero-section .container-2 .btn a{
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    .about-section .container .service{
+        width: 300px;
+    }
+    .about-section .container .service .img-border img{
+        width: 100%;
+        height: 130px;
+    }
+    .about-section .container .service .title{
+        font-size: 26px;
+    }
+    .about-section .container .service .subtitle{
+        font-size: 13px;
+    }
+    .about-section .container .service .link a{
+        font-size: 16px;
+    }
+    .about-section .container .service .link a:hover{
+        font-size: 18px;
+    }
+    .detail-section .section-content{
+        gap: 10px;
+    }
+    .detail-section .section-content .container-2 img{
+        width: 700px;
+        height: 230px;
+    }   
+    .detail-section .section-content .container-1 .title{
+        font-size: 17px;
+    }
+    .detail-section .section-content .container-1 .subtitle{
+        font-size: 41px;
+    }
+    .detail-section .section-content .container-1 .paragraph{
+        font-size: 13px;
+    }
+    .detail-section .section-content .container-1 .btn a{
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    .detail-section .section-content .container-2 .img-1{
+        border-radius: 0px;
+    }
+    .detail-section .section-content .container-2 .img-2{
+        border-radius: 0px;
     }
 }
 
@@ -227,5 +359,64 @@ header .nav-bar{
     .nav-bar .fas{
         display: none;
     }
+    .nav-bar .fa-solid{
+        display: none;
+    }
     
+}
+
+@media screen and (max-width: 600px){
+    .nav-bar .logo-bar .logo-text{
+        width: 230px;
+        height: 100%;
+    }
+    .nav-bar .nav-list .nav-link{
+        font-size: 20px;
+    }
+    .hero-section .section-content .container-1 {
+        flex: 0;
+    }
+    .hero-section .section-content .container-2 .title{
+        font-size: 45px;
+    }
+    .hero-section .section-content .container-2 .paragraph{
+        font-size: 12px;
+    }
+    .hero-section .section-content .container-2 .btn{
+        margin: 20px 0px;
+    }
+    .hero-section .container-2 .btn a{
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+    .about-section .section-title{
+        font-size: 45px;
+    }
+    .about-section .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-section .container .service .img-border img{
+        width: 100%;
+        height: 120px;
+    }
+    .about-section .container .service .title{
+        font-size: 24px;
+    }
+    .about-section .container .service .subtitle{
+        font-size: 12px;
+    }
+    .about-section .container .service .link a{
+        font-size: 15px;
+    }
+    .about-section .container .service .link a:hover{
+        font-size: 17px;
+    }
+    .detail-section .section-content{
+        flex-direction: column;
+    }
+    .detail-section .section-content .container-2 img{
+        width: 300px;
+        height: 180px;
+    } 
 }

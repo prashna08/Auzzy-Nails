@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: ceramo;
-    
+
 }
 html{
     scroll-behavior: smooth;
@@ -30,10 +30,10 @@ button{
 }
 
 .section-title{
-    font-family: arial;
+    font-family: ceramo;
     font-style: bold;
     padding: 30px 50px;
-    font-size: 45px;
+    font-size: 50px;
 }
 @font-face {
     font-family: movalo;
