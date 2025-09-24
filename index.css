@@ -85,7 +85,6 @@ header .nav-bar{
 .hero-section .section-content .container-2 .title{
     font-size: 60px;
     color: #f2f3f4;
-    
     margin-bottom: 10px;
 }
 .hero-section .section-content .container-2 .title span{
@@ -111,23 +110,17 @@ header .nav-bar{
     box-shadow: 0 2px 20px #f4c994;
 }
 /*about*/
-.about-section{
-    background-color: #f2f3f4;
-}
 .about-section .section-content{
-    padding: 50px 80px;
+    padding: 60px 80px;
 }
 .about-section .section-content .section-title{
     text-align: center;
-    margin-bottom: 30px;
-}
-.about-section .section-content .section-title span{
-    font-family: movalo;
+    margin-bottom: 20px;
 }
 .about-section .container{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
 }
 .about-section .container .service{
     display: flex;
@@ -136,17 +129,23 @@ header .nav-bar{
     text-align: center;
     width: 300px;
     height: 100%;
+    box-shadow: 0 0 10px rgb(216, 216, 216);
+    border-radius: 10px;
+    padding: 20px 20px;
 }
 .about-section .container .service .img-border{
     margin-bottom: 20px;
+       
 }
 .about-section .container .service .img-border img{
     width: 100%;
     height: 150px;
     object-fit: contain;
+
 }
 .about-section .container .service .title{
     font-size: 30px;
+    font-family: movalo;
     margin-bottom: 5px;
 }
 .about-section .container .service .subtitle{
@@ -167,51 +166,47 @@ header .nav-bar{
 }
 /*Detail*/
 .detail-section{
-    background-color: #f2f3f4;
+    background-image: url(img/bg-2.png);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
 }
-.detail-section .section-content{
+.detail-section .section-content {
     display: flex;
+    justify-content: space-between;
     justify-content: center;
-    gap: 50px;
-    padding: 70px 50px;
-}
-.detail-section .section-content .container-2{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.detail-section .section-content .container-2 img{
-    width: 700px;
-    height: 300px;
-}
-.detail-section .section-content .container-2 .img-1{
-    border-top-left-radius: 60%;
-}
-.detail-section .section-content .container-2 .img-2{
-    border-bottom-left-radius: 60%;
+
+    padding: 40px 60px; 
 }
 .detail-section .section-content .container-1{
+    flex: 1;
+}
+.detail-section .section-content .container-2{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #0b0b45; 
+
 }
-.detail-section .section-content .container-1 .title{
-    font-size: 20px;
-    color: #b5b5b7;
+.detail-section .section-content .container-2 .title{
+    font-size: 25px;
+    color: #b7b7b7;
     text-transform: uppercase;
 }
-.detail-section .section-content .container-1 .subtitle{
-    font-size: 45px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+.detail-section .section-content .container-2 .subtitle{
+    font-size: 55px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-family: movalo;
 }
-.detail-section .section-content .container-1 .paragraph{
-    font-size: 15px;
+.detail-section .section-content .container-2 .paragraph{
+    font-size: 18px;
 }
-.detail-section .section-content .container-1 .btn{
+.detail-section .section-content .container-2 .btn{
     margin: 40px 0px;
 }
-.detail-section .section-content .container-1 .btn a{
+.detail-section .section-content .container-2 .btn a{
     padding: 15px 30px;
     background-color: #f37e00 ;
     color: #f2f3f4;
@@ -219,9 +214,69 @@ header .nav-bar{
     border-radius: 2px;   
     transition: 0.3s ease all;
 }
-.detail-section .section-content .container-1 .btn a:hover{
+.detail-section .section-content .container-2 .btn a:hover{
     box-shadow: 0 2px 20px #f4c994;
 }
+/*Price*/
+.price-section .section-content{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.price-section .container{
+    display: flex;
+    justify-content: space-around;
+}
+.price-section .container img{
+    width: 450px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    box-shadow: 0 5px 10px rgb(142, 142, 142);
+}
+.price-section .container .price-detail{
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+    width: 700px;
+    padding: 40px 80px;
+    border-radius: 10px;
+}
+.price-section .container .price-detail .title{
+    font-size: 40px;
+
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: movalo;
+}
+.price-section .container .price-detail .detail{
+    display: flex;
+    justify-content: space-between;
+}
+.price-section .container .price-detail .detail .paragraph{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.price-section .container .price-detail .detail .price{
+    font-size: 18px;
+}
+.price-section .section-content .container .btn{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-section .section-content .container .btn a{
+    padding: 15px 30px;
+    background-color: #f37e00 ;
+    color: #f2f3f4;
+    font-size: 18px;
+    border-radius: 2px;   
+    transition: 0.3s ease all;
+}
+.price-section .section-content .container .btn a:hover{
+    box-shadow: 0 2px 20px #f4c994;
+}
+
 
 @media  screen and (max-width: 900px) {
      body.show-mobile-menu header::before{
@@ -327,32 +382,48 @@ header .nav-bar{
     .about-section .container .service .link a:hover{
         font-size: 18px;
     }
-    .detail-section .section-content{
-        gap: 10px;
+    .detail-section{
+        height: 50vh;
     }
-    .detail-section .section-content .container-2 img{
-        width: 450px;
-        height: 230px;
-    }   
-    .detail-section .section-content .container-1 .title{
+    .detail-section .section-content .container-2 .title{
         font-size: 17px;
     }
-    .detail-section .section-content .container-1 .subtitle{
+    .detail-section .section-content .container-2 .subtitle{
         font-size: 41px;
     }
-    .detail-section .section-content .container-1 .paragraph{
+    .detail-section .section-content .container-2 .paragraph{
         font-size: 13px;
     }
-    .detail-section .section-content .container-1 .btn a{
+    .detail-section .section-content .container-2 .btn a{
         padding: 13px 20px;
         font-size: 16px;
     }
-    .detail-section .section-content .container-2 .img-1{
-        border-top-left-radius: 60%;
+    .price-section .container img{
+        width: 400px;
+        height: 520px;
     }
-    .detail-section .section-content .container-2 .img-2{
-        border-bottom-left-radius: 60%;
+    .price-section .container .price-detail{
+        width: 420px;
+        padding: 20px 20px;
     }
+    .price-section .container .price-detail .title{
+    font-size: 35px;
+    }
+    .price-section .container .price-detail .detail .paragraph{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .price-section .container .price-detail .detail .price{
+        font-size: 15px;
+    }
+    .price-section .section-content .container .btn{
+        margin-top: 10px;
+    }
+    .price-section .section-content .container .btn a{
+        padding: 13px 20px;
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width:900px) {
@@ -412,18 +483,56 @@ header .nav-bar{
     .about-section .container .service .link a:hover{
         font-size: 17px;
     }
+    .detail-section{
+        height: 60vh;
+        display: flex;
+    }
     .detail-section .section-content{
-        flex-direction: column;
-        padding: 40px ;
+        padding: 20px 40px;
     }
-    .detail-section .section-content .container-2 img{
-        width: 100%;
-        height: 180px;
-    } 
-    .detail-section .section-content .container-2 .img-1{
-        border-radius: 0px;
+    .detail-section .section-content .container-1 {
+        flex: 0;
     }
-    .detail-section .section-content .container-2 .img-2{
-        border-radius: 0px;
+    .detail-section .section-content .container-2 .title{
+        font-size: 16px;
+    }
+    .detail-section .section-content .container-2 .subtitle{
+        font-size: 30px;
+    }
+    .detail-section .section-content .container-2 .paragraph{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .detail-section .section-content .container-2 .btn{
+        margin: 20px 0px;
+    }
+    .detail-section .container-2 .btn a{
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+    .price-section .container img{
+        width: 180px;
+        height: 320px;
+    }
+    .price-section .container .price-detail{
+        width: 320px;
+        padding: 20px 10px;
+    }
+    .price-section .container .price-detail .title{
+        font-size: 25px;
+    }
+    .price-section .container .price-detail .detail .paragraph{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .price-section .container .price-detail .detail .price{
+        font-size: 12px;
+    }
+    .price-section .section-content .container .btn{
+        margin-top: 10px;
+    }
+    .price-section .section-content .container .btn a{
+        padding: 13px 18px;
+        font-size: 13px;
     }
 }
